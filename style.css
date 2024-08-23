@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 * {
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
 }
 
 body {
@@ -13,21 +15,33 @@ body {
 }
 
 main {
-    width: 74%;
-    padding: 20px;
+    padding: 0 8rem;
 }
 
 header {
     display: flex;
+    align-items: center;
     gap: 30px;
-
-    .menu {
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(0, 0%, 89%);
+    justify-content: space-between;
+    nav ul, .logo {
         display: flex;
         gap: 20px;
+        color: hsl(219, 9%, 45%);
         margin-right: 35%;
+        list-style: none;
+        
+        cursor: pointer;
     }
     img{
         width: 40px;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        cursor: pointer;
     }
 }
 
@@ -36,11 +50,6 @@ section {
     padding: 50px;
     gap: 20px;
 }
-
-.left {
-
-}
-
 .pic {
     width: 400px;
     border-radius: 10px;
@@ -51,12 +60,14 @@ section {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+    cursor: pointer;
     img{
         width: 80px;
         border-radius: 10px;
     }
-    .img1{
-        border: 2px solid #FF7E1B;
+    .img1_active{
+        border: 3px solid #FF7E1B;
+        opacity: 60%;
     }
 }
 
@@ -64,7 +75,7 @@ section {
     padding: 50px;
     p{
         margin-bottom: 20px;
-        color: rgb(121, 121, 121);
+        color: hsl(219, 9%, 45%);
     }
     h1{
         font-size: 40px;
@@ -77,12 +88,15 @@ section {
     gap: 10px;
     p{
         background-color: black;
-        color: white;
+        color:  hsl(0, 0%, 100%);
         padding: 4px;
         font-weight: bolder;
         border-radius: 5px;
         font-size: smaller;
     }
+}
+p.strike{
+    text-decoration: line-through;
 }
 
 .purchase {
@@ -95,13 +109,31 @@ section {
     gap: 30px;
     background-color: rgb(242, 246, 252);
     padding: 10px;
+    margin-right: 10px;
     align-items: center;
     border-radius: 10px;
+    justify-content: center;
+    flex: 1;
+    font-weight: bolder;
+
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
 }
 
-button {
+button.add {
     background-color: #FF7E1B;
     font-weight: bolder;
+    font-size: small;
     width: 66%;
     border-radius: 10px;
+    outline: none;
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
 }

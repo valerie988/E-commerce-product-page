@@ -15,7 +15,8 @@ The designs were created to the following widths:
 
 - Orange: hsl(26, 100%, 55%)
 - Pale orange: hsl(25, 100%, 94%)
-
+)
+- Weights: 400, 700
 ### Neutral
 
 - Very dark blue: hsl(220, 13%, 13%)
@@ -34,6 +35,5 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
